@@ -14,13 +14,13 @@ from fabric.operations import _prefix_commands, _prefix_env_vars
 #from fabric.context_managers import cd, lcd, settings, hide
 
 # CHANGEME
-env.hosts = ['user@templatetest.example.com']
-env.code_dir = '/srv/www/templatetest'
-env.project_dir = '/srv/www/templatetest/templatetest'
-env.static_root = '/srv/www/templatetest/static/'
-env.virtualenv = '/srv/www/templatetest/.virtualenv'
-env.code_repo = 'git@github.com:user/templatetest.git'
-env.django_settings_module = 'templatetest.settings'
+env.hosts = ['user@root.example.com']
+env.code_dir = '/srv/www/root'
+env.project_dir = '/srv/www/root/root'
+env.static_root = '/srv/www/root/static/'
+env.virtualenv = '/srv/www/root/.virtualenv'
+env.code_repo = 'git@github.com:user/root.git'
+env.django_settings_module = 'root.settings'
 
 # Python version
 PYTHON_BIN = "python2.7"
@@ -135,7 +135,7 @@ def webserver_restart():
 def restart():
     """ Restart the wsgi process """
     with cd(env.code_dir):
-        run("touch %s/templatetest/wsgi.py" % env.code_dir)
+        run("touch %s/root/wsgi.py" % env.code_dir)
 
 
 def build_static():
