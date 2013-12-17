@@ -2,12 +2,18 @@
 <project version="4">
   <component name="DBNavigator.Project.ConnectionManager">
     <connections>
-      <connection driver-library="$USER_HOME$/Downloads/mysql-connector-java-5.1.21/mysql-connector-java-5.1.21-bin.jar" driver="com.mysql.jdbc.Driver" url="http://prodimages.ny.bluefly.com:3301" active="true" os-authentication="false" id="111bd524-2666-438a-acda-fa6785996d06" name="ConnectionPrdImg" description="ProdImgs" database-type="UNKNOWN" user="root" password="mysql">
+      <connection driver-library="$USER_HOME$/Downloads/mysql-connector-java-5.1.21/mysql-connector-java-5.1.21-bin.jar" driver="com.mysql.jdbc.Driver" url="http://prodimages.ny.bluefly.com" active="true" os-authentication="false" id="111bd524-2666-438a-acda-fa6785996d06" name="ConnectionPrdImg" description="ProdImgs" database-type="UNKNOWN" user="root" password="mysql">
         <details>
           <charset value="UTF-8" />
           <auto-commit value="false" />
-          <environment-type value="default" />
+          <environment-type value="development" />
           <idle-time-to-disconnect value="30" />
+          <properties>
+            <property key="port" value="3301" />
+            <property key="u" value="root" />
+            <property key="host" value="http://prodimages.ny.bluefly.com" />
+            <property key="p" value="" />
+          </properties>
         </details>
         <object-filters>
           <object-type-filter use-master-settings="true">
